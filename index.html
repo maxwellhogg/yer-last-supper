@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yer Last Supper - Alleged Restaurant | Definite Bar</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="logo">Yer Last Supper </a>
+      <button class="hamburger" aria-label="Toggle navigation">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Highly deceptive image of a restaurant that definitely isnae oors.</h1>
+      <div class="cta-buttons">
+        <a href="menu.html" class="btn">View Menu</a>
+        <a href="#contact" class="btn">Book a Table</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Modal -->
+  <div id="reservationModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Book a Table</h2>
+      <form id="reservationForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Time</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+        <div class="form-group">
+          <label for="guests">Number of Guests</label>
+          <input type="number" id="guests" name="guests" min="1" max="10" required>
+        </div>
+        <button type="submit" class="btn">Submit Reservation</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Follow-Up Modal -->
+  <div id="followUpModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>We Appreciate Your Bravery...</h2>
+      <p>But until Gordon Ramsey turns up and sorts this place out... we don't want any more casualties. We are deeply sorry.</p>
+      <img src="images/gordon-ramsay.jpg" alt="Gordon Ramsey Shouting" class="gordon-image">
+    </div>
+  </div>
+
+  <!-- Featured Dishes Section -->
+  <section class="featured-dishes">
+    <h2>Our Heart-Stopping Specials</h2>
+    <div class="dish-grid">
+      <div class="dish-card">
+        <img src="images/haggis.jpg" alt="Haggis">
+        <h3>Haggis</h3>
+        <p>If only ours looked this appetising...</p>
+      </div>
+      <div class="dish-card">
+        <img src="images/cullen-skink.jpg" alt="Cullen Skink">
+        <h3>Cullen Skink</h3>
+        <p>Our chef wishes his looked this good...</p>
+      </div>
+      <div class="dish-card">
+        <img src="images/cranachan.jpg" alt="Cranachan">
+        <h3>Cranachan</h3>
+        <p>You get the whisky, just not the cream and oats...</p>
+      </div>
+    </div>
+  </section>
+  
+	 <!-- Opening Times Section -->
+	<section class="opening-times">
+	  <h2>Opening Times</h2>
+	  <div class="times-grid">
+	    <div class="day">
+	      <h3>Mon - Thurs</h3>
+	      <p>12:00 PM - 10:00 PM</p>
+	    </div>
+	    <div class="day">
+	      <h3>Fri - Sat</h3>
+	      <p>12:00 PM - 11:00 PM</p>
+	    </div>
+	    <div class="day">
+	      <h3>Sun</h3>
+	      <p>12:00 PM - 9:00 PM</p>
+	    </div>
+	  </div>
+	  <p class="note">*Kitchen closes 30 minutes before closing time... or when Health & Safety show up... oh dear!!</p>
+	</section>
+	
+<!-- Legendary Scottish Cuisine Section -->
+<section class="legendary-cuisine">
+  <div class="background-layer"></div>
+  <div class="background-layer"></div>
+  <div class="legendary-content">
+    <h2>Legendary Scottish Cuisine</h2>
+    <p>From haggis to cranachan, our dishes are steeped in tradition and served with a side of Scottish charm. Come taste the flavors of Scotland – where every bite tells a story.</p>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Yer Last Supper Ltd. – We accept no responsibility for your life choices.</p>
+    <div class="social-links">
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="Facebook">Facebook</a>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

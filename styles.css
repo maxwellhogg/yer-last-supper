@@ -429,10 +429,10 @@ footer p {
 
 
 
-/* Menu Section */
+/* Specials Section */
 
 .menu-header {
-  background: url('/images/last-supper-interior.jpg') no-repeatcenter center/cover;
+  background: url('/images/last-supper-interior.jpg') no-repeat center center/cover;
   height: 40vh;
   display: flex;
   flex-direction: column;
@@ -450,12 +450,18 @@ footer p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(46, 76, 61, 0.6); /* Deep green overlay */
+  background: rgba(46, 76, 61, 0.6);
 }
 
 .menu-header h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+  z-index: 100;
+}
+
+.menu-header p {
+  color: #F4E9CD;
+  z-index: 100;
 }
 
 .menu {
@@ -520,4 +526,72 @@ footer p {
   font-size: 1.2rem;
   font-weight: bold;
   color: #2E4C3D;
+}
+
+/* Complete Menu Table */
+.complete-menu {
+  padding: 40px 20px;
+  background: #FFFFFF;
+}
+
+.complete-menu h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2E4C3D;
+  text-align: center;
+}
+
+.complete-menu p {
+  text-align: center;
+}
+
+.complete-menu .menu-intro {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #666666;
+}
+
+.complete-menu table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.complete-menu th,
+.complete-menu td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.complete-menu th {
+  background: #2E4C3D;
+  color: #F4E9CD;
+  font-weight: bold;
+}
+
+.complete-menu td {
+  background: #F4E9CD;
+  color: #333333;
+}
+
+.complete-menu td:hover {
+  background: #E0D8C0;
+}
+
+.complete-menu td[rowspan] {
+  background: #D95D39;
+  color: #F4E9CD;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .complete-menu table {
+    display: block;
+    overflow-x: auto;
+  }
 }

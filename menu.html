@@ -11,7 +11,7 @@
   <!-- Top Navigation -->
   <nav class="navbar">
     <div class="navbar-container">
-      <a href="index.html" class="logo">Yer Last Supper</a>
+      <a href="index.html" class="logo">Yer Last Supper </a>
       <button class="hamburger" aria-label="Toggle navigation">
         <span class="hamburger-line"></span>
         <span class="hamburger-line"></span>
@@ -21,11 +21,51 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li><a href="#about">About Us</a></li>
-        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
+
+  <!-- Reservation Modal -->
+  <div id="reservationModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Book a Table</h2>
+      <form id="reservationForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Time</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+        <div class="form-group">
+          <label for="guests">Number of Guests</label>
+          <input type="number" id="guests" name="guests" min="1" max="10" required>
+        </div>
+        <button type="submit" class="btn">Submit Reservation</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Follow-Up Modal -->
+  <div id="followUpModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>We Appreciate Your Bravery...</h2>
+      <p>But until Gordon Ramsey turns up and sorts this place out... we don't want any more casualties. We are deeply sorry.</p>
+      <img src="images/gordon-ramsay.jpg" alt="Gordon Ramsey Shouting" class="gordon-image">
+    </div>
+  </div>
 
     <!-- Menu header section -->
     <div class="menu-header">
@@ -162,6 +202,69 @@
           <td>Cranachan</td>
           <td>Whisky, cream, and oats – because dessert should be a gamble.</td>
           <td>£6.50</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Drinks Table -->
+  <section class="drinks-menu">
+    <h2>Drinks Menu</h2>
+    <p class="menu-intro">Quench yer thirst with our selection of fine drinks. Prices are in GBP.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Drink</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Alcoholic Drinks -->
+        <tr>
+          <td rowspan="5">Alcoholic</td>
+          <td>Scotch Whisky</td>
+          <td>Aged to perfection – just like yer granny’s stories.</td>
+          <td>£5.00</td>
+        </tr>
+        <tr>
+          <td>Gin and Tonic</td>
+          <td>Classic and refreshing – the perfect way to start (or end) the night.</td>
+          <td>£6.00</td>
+        </tr>
+        <tr>
+          <td>Red Wine</td>
+          <td>Rich and full-bodied – like a Scottish winter.</td>
+          <td>£4.50</td>
+        </tr>
+        <tr>
+          <td>White Wine</td>
+          <td>Crisp and refreshing – like a Scottish summer (if it existed).</td>
+          <td>£4.50</td>
+        </tr>
+        <tr>
+          <td>Local Ale</td>
+          <td>Brewed with pride – and a hint of rebellion.</td>
+          <td>£4.00</td>
+        </tr>
+
+        <!-- Soft Drinks -->
+        <tr>
+          <td rowspan="3">Soft Drinks</td>
+          <td>Coke</td>
+          <td>The classic fizzy drink – for when ye need a sugar rush.</td>
+          <td>£2.00</td>
+        </tr>
+        <tr>
+          <td>Vimto</td>
+          <td>A fruity favorite – tastes like childhood nostalgia.</td>
+          <td>£2.00</td>
+        </tr>
+        <tr>
+          <td>7-Up</td>
+          <td>Lemon-lime goodness – for a wee bit of fizz.</td>
+          <td>£2.00</td>
         </tr>
       </tbody>
     </table>

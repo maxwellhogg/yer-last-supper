@@ -595,3 +595,69 @@ footer p {
     overflow-x: auto;
   }
 }
+
+/* Drinks Menu Table */
+.drinks-menu {
+  padding: 40px 20px;
+  background: #F4E9CD;
+}
+
+.drinks-menu h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2E4C3D;
+  text-align: center;
+}
+
+.drinks-menu .menu-intro {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #666666;
+  text-align: center;
+}
+
+.drinks-menu table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.drinks-menu th,
+.drinks-menu td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.drinks-menu th {
+  background: #2E4C3D;
+  color: #F4E9CD;
+  font-weight: bold;
+}
+
+.drinks-menu td {
+  background: #FFFFFF;
+  color: #333333;
+}
+
+.drinks-menu td:hover {
+  background: #E0D8C0; /* Lighter shade for hover effect */
+}
+
+.drinks-menu td[rowspan] {
+  background: #D95D39; /* Rust orange for category cells */
+  color: #F4E9CD;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .drinks-menu table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
